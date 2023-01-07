@@ -11,26 +11,26 @@ switch (window.location.pathname)
 {
     case '/':
         indicators[0].classList.remove('d-none');
-        navLinks[0].style.color = 'rgb(188, 72, 211)';
+        navLinks[0].style.color = 'rgb(130, 80, 223)';
         break;
     case '/about':
         indicators[1].classList.remove('d-none');
-        navLinks[1].style.color = 'rgb(188, 72, 211)';
+        navLinks[1].style.color = 'rgb(130, 80, 223)';
         break;
     case '/skills':
         indicators[2].classList.remove('d-none');
-        navLinks[2].style.color = 'rgb(188, 72, 211)';
+        navLinks[2].style.color = 'rgb(130, 80, 223)';
         break;
     case '/education':
         indicators[3].classList.remove('d-none');
-        navLinks[3].style.color = 'rgb(188, 72, 211)';
+        navLinks[3].style.color = 'rgb(130, 80, 223)';
         break;
     case '/work':
         indicators[4].classList.remove('d-none');
-        navLinks[4].style.color = 'rgb(188, 72, 211)';
+        navLinks[4].style.color = 'rgb(130, 80, 223)';
         break;
     case '/contact':
         indicators[5].classList.remove('d-none');
-        navLinks[5].style.color = 'rgb(188, 72, 211)';
+        navLinks[5].style.color = 'rgb(130, 80, 223)';
         break;
 }
