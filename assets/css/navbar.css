@@ -33,4 +33,5 @@ a:hover
 nav
 {
     background-color: rgb( 250, 250, 250) !important;
+    height: 65px;
 }
