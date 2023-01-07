@@ -5,7 +5,7 @@
 
 .content 
 {
-    height: calc(100% - 64px) !important;
+    height: calc(100% - 65px) !important;
     margin: 0;
     padding: 0;
 }
@@ -13,9 +13,10 @@
 .home-profile-img 
 {
     display: block;
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
 }
+
 
 .greetings
 {
