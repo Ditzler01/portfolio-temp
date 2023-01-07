@@ -1,5 +1,4 @@
 
-
 window.addEventListener("resize", function()
 {
     var screenHeight = document.documentElement.clientHeight;
@@ -11,3 +10,14 @@ window.addEventListener("resize", function()
     else
         profileContainer.style.marginTop = '0px';
 });
+
+async function openResume()
+{
+    var url = "../assets/Resume - Santos, Ditzler.pdf";
+    var fileName = "Resume - Santos, Ditzler.pdf";
+    var res = await fetch(url);
+    var blob = await res.blob();
+    saveAs(blob, fileName);
+
+    window.open('../assets/Resume - Santos, Ditzler.pdf');
+}
