@@ -20,7 +20,6 @@ a:hover
     font-weight: 400;
     font-size: 1.5em;
     color: var(--secondary);
-    text-align: center;
 }
 
 .indicator
@@ -35,6 +34,16 @@ a:hover
     cursor: pointer;
     position: absolute;
     right: 0;
+}
+
+.nav-hidden
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--primary);
+    height: 100%;
+    width: 100%;
 }
 
 nav
