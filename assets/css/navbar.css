@@ -44,11 +44,12 @@ a:hover
 .nav-hidden
 {
     position: absolute;
-    right: 0;
+    right: -100%;
     top: 0;
     background-color: var(--primary);
     height: 100%;
     width: 100%;
+    transition: all ease-in-out 0.3s;
 }
 
 nav
