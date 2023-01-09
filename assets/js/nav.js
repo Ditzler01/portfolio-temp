@@ -1,5 +1,6 @@
 var navLinks = document.getElementsByTagName('a');
 var indicators = document.getElementsByClassName('indicator');
+var hiddenNav = document.getElementById('nav-hidden');
 
 for (var i = 0; i < navLinks.length; i++)
 {
@@ -37,4 +38,14 @@ switch (window.location.pathname)
         indicators[6].classList.remove('d-none');
         navLinks[6].style.color = 'rgb(130, 80, 223)';
         break;
+}
+
+function showHiddenNav()
+{
+    hiddenNav.style.right = '0%';
+}
+
+function hideHiddenNav()
+{
+    hiddenNav.style.right = '-100%';
 }
