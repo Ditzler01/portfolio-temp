@@ -1,6 +1,7 @@
 var navLinks = document.getElementsByTagName('a');
 var indicators = document.getElementsByClassName('indicator');
 var hiddenNav = document.getElementById('nav-hidden');
+var hiddenNavContent = document.getElementById('hidden-nav-content');
 
 for (var i = 0; i < indicators.length; i++)
 {   
@@ -44,8 +45,6 @@ window.addEventListener("resize", function()
 {
     var screenWidth = document.documentElement.clientWidth;
     
-    console.log(screenWidth);
-
     if (screenWidth > 992)
     {
         hideHiddenNav();
@@ -56,10 +55,16 @@ window.addEventListener("resize", function()
 
 function showHiddenNav()
 {
-    hiddenNav.style.right = '0%';
+    hiddenNav.style.right = '0';
+    hiddenNav.style.width = '100%';
+    hiddenNav.style.visibility = 'visible';
+    hiddenNavContent.classList.remove('d-none');
 }
 
 function hideHiddenNav()
 {
     hiddenNav.style.right = '-100%';
+    hiddenNav.style.width = '0px';
+    hiddenNav.style.visibility = 'hidden';
+    hiddenNavContent.classList.add('d-none');
 }
